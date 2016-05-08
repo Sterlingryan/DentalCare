@@ -1,0 +1,80 @@
+<resources>
+
+    <!--String related to the Welcome Screen Wizard-->
+    <string name="app_name">Dental Care</string>
+    <string name="welcomeTitle">Welcome</string>
+    <string name="nextButton">Next</string>
+    <string name="prevButton">Prev</string>
+    <string-array name="ageGroups">
+        <item>Infant</item>
+        <item>Young Adult</item>
+        <item>Adult</item>
+    </string-array>
+
+    <!--Strings related to the Carer Screen Wizard-->
+    <string name="carerQuestion">Do you take care of other\'s dental hygiene ?</string>
+    <string name="chkbx1">Children</string>
+    <string name="chkbx2">Elderly</string>
+    <string name="chkbx3">Differently Abled</string>
+
+    <!--Strings related to the Brushing Screen Wizard-->
+    <string name="wizardBrushingTitle">How often do you brush your teeth ?</string>
+    <string-array name="wizardBrushingHealthBar">
+        <item>Once or twice a day</item>
+        <item>Few times a week</item>
+        <item>Sometimes a month</item>
+    </string-array>
+
+    <!--Srings related to Smoking Screen Wizard-->
+    <string name="smokingQuestion">Do you smoke ?</string>
+    <string name="yesButton">Yes</string>
+    <string name="noButton">No</string>
+    <string name="finishButton">Finish</string>
+    <string name="createAccount">Not a member?</string>
+
+    <!--Facebook Strings-->
+    <string name="facebook_app_id">472622809615469</string>
+
+    <!--Strings related to Login Activity-->
+    <string name="Login">Login</string>
+
+    <!--Strings related to Register Activity-->
+    <string name="signUpButton">Sign Up</string>
+    <string name="hintFullName">Full Name</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintConfirmPassword">Confirm Password</string>
+    <string name="alreadyAMemberButton">Already a member?</string>
+
+    <!-- Max's Strings-->
+    <!--Strings related to Dashboard-->
+    <string name="action_settings">Settings</string>
+    <string name="home_chip_text">Next appointment is on 25th March</string>
+    <string name="search_hint">Enter your search</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+
+    <!-- Smoking Counter -->
+    <string name="smoking1">How many cigarettes/packs do you smoke per day?</string>
+    <string-array name="smoking_array">
+        <item>Cigarettes</item>
+        <item>Packets</item>
+    </string-array>
+    <string name="title_activity_smoking__output">Smoking_Output</string>
+    <string name="title_activity_smoking__input">Smoking_Input</string>
+    <string name="search_title">Search</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <!--Gabriel's Strings.-->
+    <string name="action_change">Change Viewing Mode</string>
+    <string name="action_portal">Open Portal (administrator)</string>
+    <string name="action_contactus">Contact Us</string>
+    <string name="action_about">About</string>
+    <string name="title_activity_information_page">Information Page</string>
+    <string name="title_activity_video_section">Video Section</string>
+    <string name="title_activity_video_page">Video Page</string>
+
+    <!--Robert's Strings.-->
+    <string name="title_activity_brush_your_teeth">Brush Your Teeth</string>
+    <string name="title_activity_appointment_logbook">Appointment Logbook</string>
+</resources>

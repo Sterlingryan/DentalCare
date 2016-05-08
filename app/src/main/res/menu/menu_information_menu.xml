@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.gabriel.gaptdentistinformation.InformationMenu">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_change"
+        android:orderInCategory="100"
+        android:title="@string/action_change"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_portal"
+        android:orderInCategory="100"
+        android:title="@string/action_portal"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_contactus"
+        android:orderInCategory="100"
+        android:title="@string/action_contactus"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+</menu>
