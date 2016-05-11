@@ -37,7 +37,7 @@ public class WizardBrushingActivity extends AppCompatActivity{
         pckrBrushingHealth.setDisplayedValues(brushingState);
 
         //Gets whether the selector wheel wraps when reaching the min/max value.
-        pckrBrushingHealth.setWrapSelectorWheel(true);
+        //pckrBrushingHealth.setWrapSelectorWheel(true);
 
         //Prevents keyboard from popping up.
         pckrBrushingHealth.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
