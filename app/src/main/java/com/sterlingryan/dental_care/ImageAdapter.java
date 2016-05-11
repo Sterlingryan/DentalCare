@@ -1,7 +1,7 @@
 package com.sterlingryan.dental_care;
 
 
-        import android.app.Activity;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.ActivityCompat;

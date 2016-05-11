@@ -45,27 +45,21 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/yesButton"
-        android:id="@+id/yesButton"
-        android:minWidth="200dp"
-        android:layout_above="@+id/noButton"
-        android:layout_toRightOf="@+id/smokingPrevbutton"
-        android:layout_toEndOf="@+id/smokingPrevbutton"
-        android:layout_marginBottom="69dp" />
+        android:id="@+id/button2"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/noButton"
-        android:id="@+id/noButton"
-        android:minWidth="200dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginTop="116dp" />
+        android:id="@+id/button3"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
 
 </RelativeLayout>
