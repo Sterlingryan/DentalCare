@@ -14,7 +14,7 @@ import android.widget.Button;
  */
 public class VideoAdapter extends ArrayAdapter<VideoItem> {
 
-    public final static String PAGE_VIDEOITEM = "com.example.gabriel.gaptdentist.PAGE_VIDEOITEM";
+
 
     private Context _myContext;
     private int _myResource;
@@ -46,7 +46,7 @@ public class VideoAdapter extends ArrayAdapter<VideoItem> {
 
     public void NextPage(View view, VideoItem myVideoItem){
         Intent videoPageIntent = new Intent(_myContext, VideoPage.class);
-        videoPageIntent.putExtra(PAGE_VIDEOITEM, myVideoItem.Name);
+       // videoPageIntent.putExtra(PAGE_VIDEOITEM, myVideoItem.Name);
         _myContext.startActivity(videoPageIntent);
     }
 }

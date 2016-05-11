@@ -77,4 +77,5 @@
     <!--Robert's Strings.-->
     <string name="title_activity_brush_your_teeth">Brush Your Teeth</string>
     <string name="title_activity_appointment_logbook">Appointment Logbook</string>
+    <string name="title_activity_information_page_checklist">InformationPageChecklist</string>
 </resources>

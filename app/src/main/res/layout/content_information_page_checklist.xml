@@ -9,35 +9,24 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.sterlingryan.dental_care.VideoPage"
-    tools:showIn="@layout/activity_video_page">
+    tools:context="com.sterlingryan.dental_care.InformationPageChecklist"
+    tools:showIn="@layout/activity_information_page_checklist">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="testing"
-        android:id="@+id/videoTitle"
+        android:text="Title"
+        android:id="@+id/checklistTitle"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <fragment
-        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-        android:id="@+id/youtubeplayerfragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/videoTitle"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/videoDescription"
-        android:layout_below="@+id/youtubeplayerfragment"
+        android:id="@+id/checklist"
+        android:layout_below="@+id/checklistTitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 </RelativeLayout>

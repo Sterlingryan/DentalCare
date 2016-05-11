@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         pckrAgeGroup.setDisplayedValues(ageGroups);
 
         //Gets whether the selector wheel wraps when reaching the min/max value.
-        pckrAgeGroup.setWrapSelectorWheel(true);
+        //pckrAgeGroup.setWrapSelectorWheel(true);
 
         //Prevents keyboard from popping up.
         pckrAgeGroup.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);

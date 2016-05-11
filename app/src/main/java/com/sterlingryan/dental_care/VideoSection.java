@@ -25,7 +25,7 @@ public class VideoSection extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        myContext = this;
+       /* myContext = this;
         myList = (ListView)findViewById(R.id.listView);
 
         try {
@@ -71,7 +71,7 @@ public class VideoSection extends AppCompatActivity {
 
 
 
-
+*/
     }
 
 }

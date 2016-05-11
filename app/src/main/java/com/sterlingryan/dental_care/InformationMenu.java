@@ -24,7 +24,7 @@ public class InformationMenu extends AppCompatActivity {
     public TextView textview = null;
 
     public ArrayList<Section> listDataHeader = new ArrayList<Section>();
-    public HashMap<Section, List<InformationPage>> listDataChild = new HashMap<Section, List<InformationPage>>();
+    public HashMap<Section, List<InformationPageHolder>> listDataChild = new HashMap<Section, List<InformationPageHolder>>();
 
     private MobileServiceClient mClient;
     private ExpandableListView expListView;
@@ -57,6 +57,8 @@ public class InformationMenu extends AppCompatActivity {
                 try {
                     final List<Section> sections = mClient.getTable(Section.class).where().execute().get();
                     final List<InformationPage> informationPages = mClient.getTable(InformationPage.class).where().execute().get();
+                    final List<InformationPageVideo> informationPagesVideos = mClient.getTable(InformationPageVideo.class).where().execute().get();
+                    final List<InformationPageProcedure> informationPagesProcedures = mClient.getTable(InformationPageProcedure.class).where().execute().get();
 
                     runOnUiThread(new Runnable() {
                         @Override
@@ -64,14 +66,24 @@ public class InformationMenu extends AppCompatActivity {
                             int _c = 0;
                             for (Section section : sections) {
                                 listDataHeader.add(new Section(section.Name));
-                                List<InformationPage> myPages = new ArrayList<InformationPage>();
+                                List<InformationPageHolder> myPages = new ArrayList<InformationPageHolder>();
 
                                 for (InformationPage page : informationPages){
                                     if (page.SectionId == section.id){
-                                        myPages.add(page);
+                                        myPages.add(new InformationPageHolder(page));
                                     }
+                                }
 
+                                for (InformationPageVideo page : informationPagesVideos){
+                                    if (page.SectionId == section.id){
+                                        myPages.add(new InformationPageHolder(page));
+                                    }
+                                }
 
+                                for (InformationPageProcedure page : informationPagesProcedures){
+                                    if (page.SectionId == section.id){
+                                        myPages.add(new InformationPageHolder(page));
+                                    }
                                 }
 
                                 listDataChild.put(listDataHeader.get(_c), myPages);
