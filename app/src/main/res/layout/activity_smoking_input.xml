@@ -10,16 +10,19 @@
         android:text="@string/smoking1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:id="@+id/textView" />
 
 
     <Spinner
         android:id="@+id/smoking_spinner"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_below="@+id/textView"
-        android:layout_alignParentEnd="true"
+        android:gravity="right"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="10dp"
         />
 
 
@@ -28,21 +31,34 @@
         android:layout_below="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/smoking_spinner"
         android:hint="0"
+        android:gravity="left"
+        android:textSize="20dp"
 
 
 
         />
 
-    <Button
+
+    <TextView
+        android:text="We will now calculate how much you've been spending, how much you'll spend in the future and what you can do to stop smoking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/smoking_edit_txt"
+        android:textSize="20dp"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
         android:text="Calculate"
         android:onClick="send_message"
-
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="92dp" />
 
 
 </RelativeLayout>

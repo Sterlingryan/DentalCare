@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 
 public class Smoking_Output extends ActionBarActivity {
 
@@ -35,12 +37,16 @@ public class Smoking_Output extends ActionBarActivity {
 
         }
 
+        DecimalFormat dF = new DecimalFormat("#.#");
+        TextView textView = (TextView)findViewById(R.id.smoking_hint1);
+        textView.setText("You have been smoking " +dF.format(amount)+ " "+amountVar + " a day which amounts to:" );
 
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText("€" + Double.toString(message*365));
-        RelativeLayout layout= (RelativeLayout) findViewById(R.id.smoking_content);
-        layout.addView(textView);
+        DecimalFormat df = new DecimalFormat("0.00");
+        TextView textView1 = (TextView)findViewById(R.id.smoking_txt1);
+        textView1.setText("€" + (df.format(message*365)));
+
+        TextView textView2 = (TextView)findViewById(R.id.smoking_txt2);
+        textView2.setText("€" + (df.format(message*1825)));
 
 
     }
