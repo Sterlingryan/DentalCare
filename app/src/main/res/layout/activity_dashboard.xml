@@ -3,7 +3,9 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Dashboard">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/test"
+    tools:context=".Dashboard">
 
     <GridView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/gridview"
@@ -16,6 +18,8 @@
         android:stretchMode="columnWidth"
         android:gravity="center"
         />
+
+
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/home_chip"

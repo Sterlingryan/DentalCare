@@ -8,12 +8,53 @@
     android:id="@+id/smoking_content"
     >
 
-    <TextView android:text="This is the amount you could have saved in the past year!"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="147dp" />
+        android:textSize="20dp"
+        android:id="@+id/smoking_hint1"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="65dp"
+        android:paddingTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/smoking_txt1"
+        />
+
+
+    <TextView
+        android:text="spent this year on cigarettes and you will spend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="175dp"
+
+
+        />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="65dp"
+        android:paddingTop="240dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/smoking_txt2"
+        />
+
+    <TextView
+        android:text="in the next 5 years if you keep smoking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="340dp"
+
+
+        />
 
 </RelativeLayout>
