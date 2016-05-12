@@ -66,6 +66,8 @@ public class AppointmentLogbook extends Activity implements EasyPermissions.Perm
     private TextView mOutputText;
     private Button mCallApiButton;
     ProgressDialog mProgress;
+	
+    private boolean flag = true;
 
     static final int REQUEST_ACCOUNT_PICKER = 1000;
     static final int REQUEST_AUTHORIZATION = 1001;
