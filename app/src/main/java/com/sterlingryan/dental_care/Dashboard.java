@@ -5,11 +5,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.GridView;
+import android.widget.RelativeLayout;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -48,22 +51,14 @@ public class Dashboard extends AppCompatActivity {
         //search intent
         handleIntent(getIntent());
 
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+
+        int tmpInt=metrics.widthPixels/10;
+
         gv=(GridView) findViewById(R.id.gridview);
+        gv.setVerticalSpacing(tmpInt);
         gv.setAdapter(new ImageAdapter(this, prgmNameList,prgmImages));
-/*
-
-        GridView gridview = (GridView) findViewById(R.id.gridview);
-        gridview.setAdapter(new ImageAdapter(this));
-
-        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v,
-                                    int position, long id) {
-                Toast.makeText(Dashboard.this, "" + position,
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-*/
 
     }
 
